@@ -9,4 +9,8 @@ RSpec.describe RockPaperScissors do
     result = RockPaperScissors.new
     expect(result.play("scissors", "paper")).to eq "Player 1 wins"
   end
+  it "returns 'Player 2 wins' when scissors vs rock" do
+    result = RockPaperScissors.new
+    expect(result.play("scissors", "paper")).to eq "Player 2 wins"
+  end
 end
